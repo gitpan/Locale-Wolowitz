@@ -1,5 +1,11 @@
 Revision history for Locale::Wolowitz
 
+0.3       2012-11-22 21:08:09 Asia/Jerusalem
+	- Added the ability to load just on localization file
+	- Added versions to prereqs
+	- Added JSON recommendations to prereqs as JSON::Any doesn't require any JSON module
+	- Improved documentation
+
 0.2       2010-12-26 16:03:29 Asia/Jerusalem
 	- Changed distribution name to Locale::Wolowitz
 	- Fixed some documentation errors

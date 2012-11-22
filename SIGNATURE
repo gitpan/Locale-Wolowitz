@@ -1,0 +1,42 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.69.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+SHA1 af620ac9785c83a8fd0b98fc3a89b4077ffc8059 Changes
+SHA1 d1f2e9415c4cf1cf340ba54dc32c764821261fd2 INSTALL
+SHA1 d38085d38a0d811f563a79af5ca3594c53b9d948 LICENSE
+SHA1 5264a6b4ae7ab4b91ff18c3e45e58b5bf2a3b3cb MANIFEST
+SHA1 5ae90dd82f92c31131910e10f3362bb1dd834d0d MANIFEST.SKIP
+SHA1 eeb5763cf6113efe3d7ad20cf41cf105a65e21bd META.json
+SHA1 eaf61c5493f80b55ad524c6880c8c3ec0b96d412 META.yml
+SHA1 0c2f15179b0cf83b0d1680c149d308bc14a3ab86 Makefile.PL
+SHA1 f123982ed738b5d3116eabf342dc048bd926569e README
+SHA1 2528713e199329d906966a4048864669f9680aaa dist.ini
+SHA1 55a5dc19860b366cf8a667fc3d5e50004637e4ff lib/Locale/Wolowitz.pm
+SHA1 c45c7df44f4f86c73860c00384d1c5c94e42dd53 t/00-load.t
+SHA1 70a91c341bab7090b7942c8ac9b8b3729810a022 t/01-dir.t
+SHA1 32c13092e499f425c7a4671f39ea5fa9ab92c60c t/02-file.t
+SHA1 f52ede6af79ff5734be5f9555ac64a7bf3933229 t/i18n/i18n.coll.json
+SHA1 4ac0c83266903c79a514a85b78fbec21750cabe1 t/i18n/rev_en.json
+SHA1 87768d177f8c2e2df9c591cde869e7c8a245555e t/release-dist-manifest.t
+SHA1 9433c240fe590bc404ab68ff63984df763e347ed t/release-pod-coverage.t
+SHA1 b30cbdfaf935017c4568c0c91b242438cb87786e t/release-pod-syntax.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.19 (GNU/Linux)
+
+iF4EAREIAAYFAlCueDUACgkQa4OHQAFM10eiUQD8DItSQOJLNudpuM63nXbS7jRr
+HrEljmJxsAxdXDGeg6YA/1aWO/9CVsm51ACH5ZrGW+MLnQ6xo+evU10VL10HEesQ
+=PA/t
+-----END PGP SIGNATURE-----

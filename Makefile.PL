@@ -2,33 +2,35 @@
 use strict;
 use warnings;
 
-BEGIN { require 5.008; }
+use 5.008;
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Dead simple localization for web apps with JSON.',
-  'AUTHOR' => 'Ido Perlmuter <ido@ido50.net>',
-  'BUILD_REQUIRES' => {
-    'Test::More' => '0'
+  "ABSTRACT" => "Dead simple localization for with JSON.",
+  "AUTHOR" => "Ido Perlmuter <ido\@ido50.net>",
+  "BUILD_REQUIRES" => {
+    "Test::More" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Locale-Wolowitz',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Locale::Wolowitz',
-  'PREREQ_PM' => {
-    'Carp' => '0',
-    'JSON::Any' => '0',
-    'utf8' => '0'
+  "DISTNAME" => "Locale-Wolowitz",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Locale::Wolowitz",
+  "PREREQ_PM" => {
+    "Carp" => 0,
+    "JSON::Any" => 0,
+    "strict" => 0,
+    "utf8" => 0,
+    "warnings" => 0
   },
-  'VERSION' => '0.2',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.3",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

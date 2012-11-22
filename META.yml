@@ -1,21 +1,29 @@
 ---
-abstract: 'Dead simple localization for web apps with JSON.'
+abstract: 'Dead simple localization for with JSON.'
 author:
   - 'Ido Perlmuter <ido@ido50.net>'
 build_requires:
   Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.31
+  ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.102345, CPAN::Meta::Converter version 2.102160'
+generated_by: 'Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Locale-Wolowitz
+recommends:
+  JSON: 2.50
+  JSON::XS: 2.3
 requires:
   Carp: 0
   JSON::Any: 0
   perl: 5.008
+  strict: 0
   utf8: 0
-version: 0.2
+  warnings: 0
+resources:
+  homepage: https://github.com/ido50/Locale-Wolowitz
+  repository: https://github.com/ido50/Locale-Wolowitz.git
+version: 0.3

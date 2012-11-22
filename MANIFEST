@@ -1,4 +1,5 @@
 Changes
+INSTALL
 LICENSE
 MANIFEST
 MANIFEST.SKIP
@@ -6,10 +7,12 @@ META.json
 META.yml
 Makefile.PL
 README
+SIGNATURE
 dist.ini
 lib/Locale/Wolowitz.pm
 t/00-load.t
-t/01-simple.t
+t/01-dir.t
+t/02-file.t
 t/i18n/i18n.coll.json
 t/i18n/rev_en.json
 t/release-dist-manifest.t
