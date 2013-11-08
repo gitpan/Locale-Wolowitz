@@ -9,7 +9,7 @@ use utf8;
 use Carp;
 use JSON::Any;
 
-our $VERSION = "0.3";
+our $VERSION = "0.4";
 $VERSION = eval $VERSION;
 
 =encoding utf-8
@@ -20,7 +20,7 @@ Locale::Wolowitz - Dead simple localization for with JSON.
 
 =head1 VERSION
 
-version 0.3
+version 0.4
 
 =head1 SYNOPSIS
 
@@ -184,6 +184,7 @@ passed to the method (C<@args>) are injected to the placeholders in the string
 sub loc {
 	my ($self, $msg, $lang, @args) = @_;
 
+	return unless defined $msg; # undef strings are passed back as-is
 	return $msg unless $lang;
 
 	my $ret = $self->{locales}->{$msg} && $self->{locales}->{$msg}->{$lang} ? $self->{locales}->{$msg}->{$lang} : $msg;

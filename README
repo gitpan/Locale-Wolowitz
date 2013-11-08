@@ -2,21 +2,21 @@ NAME
     Locale::Wolowitz - Dead simple localization for with JSON.
 
 VERSION
-    version 0.3
+    version 0.4
 
 SYNOPSIS
             # in ./i18n/locales.coll.json
             {
                     "Welcome!": {
-                            "he": "ברוכים הבאים!",
+                            "he": "××¨×××× ×××××!",
                             "es": "Bienvenido!"
                     },
                     "I'm using %1": {
-                            "he": "אני משתמש ב%1",
+                            "he": "×× × ××©×ª××© ×%1",
                             "es": "Estoy usando %1"
                     },
                     "Linux": {
-                            "he": "לינוקס"
+                            "he": "××× ××§×¡"
                     }
             }
 
@@ -27,7 +27,7 @@ SYNOPSIS
 
             print $w->loc('Welcome!', 'es'); # prints 'Bienvenido!'
 
-            print $w->loc("I'm using %1", 'he', $w->loc('Linux', 'he')); # prints "אני משתמש בלינוקס"
+            print $w->loc("I'm using %1", 'he', $w->loc('Linux', 'he')); # prints "×× × ××©×ª××© ×××× ××§×¡"
 
 DESCRIPTION
     Locale::Wolowitz is a very simple text localization system. Yes, another
@@ -86,9 +86,9 @@ DESCRIPTION
 
             # he.json
             {
-                    "Welcome!": "ברוכים הבאים!",
-                    "I'm using %1": "אני משתמש ב%1",
-                    "Linux": "לינוקס"
+                    "Welcome!": "××¨×××× ×××××!",
+                    "I'm using %1": "×× × ××©×ª××© ×%1",
+                    "Linux": "××× ××§×¡"
             }
 
     When loading these files, Locale::Wolowitz internally merges the two
@@ -98,15 +98,15 @@ DESCRIPTION
                     "Welcome!" => {
                             "es" => "Bienvenido!",
                             "nl" => "Welkom!",
-                            "he" => "ברוכים הבאים!",
+                            "he" => "××¨×××× ×××××!",
                     },
                     "I'm using %1" => {
                             "es" => "Estoy usando %1",
                             "nl" => "Ik gebruik %1",
-                            "he" => "אני משתמש ב%1",
+                            "he" => "×× × ××©×ª××© ×%1",
                     },
                     "Linux" => {
-                            "he" => "לינוקס",
+                            "he" => "××× ××§×¡",
                     }
             }
 
@@ -133,7 +133,7 @@ DESCRIPTION
 
             "copyrights": {
                     "en": "Copyrights, 2010 Ido Perlmuter",
-                    "he": "כל הזכויות שמורות, 2010 עידו פרלמוטר"
+                    "he": "×× ×××××××ª ×©×××¨××ª, 2010 ×¢××× ×¤×¨×××××¨"
             }
 
 CLASS METHODS
