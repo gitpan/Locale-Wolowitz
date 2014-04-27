@@ -9,7 +9,7 @@ use utf8;
 use Carp;
 use JSON;
 
-our $VERSION = "1.000000";
+our $VERSION = "1.000001";
 $VERSION = eval $VERSION;
 
 =encoding utf-8
@@ -225,7 +225,7 @@ sub load_path {
 		# read the file's contents and parse it as json
 		open(FILE, "$path/$_")
 			|| croak "Can't open localization file $_: $!";
-		undef $/;
+		local $/;
 		my $json = <FILE>;
 		close FILE
 			|| carp "Can't close localization file $_: $!";
@@ -374,8 +374,8 @@ C<Locale::Wolowitz> B<depends> on the following CPAN modules:
 
 =back
 
-C<Locale::Wolowitz> recommends L<JSON> and/or L<JSON::XS>
-for actually being able to parse the JSON files.
+C<Locale::Wolowitz> recommends L<JSON::XS> for faster parsing of JSON files.
+If installed, C<JSON> will automatically load it in its place.
 
 =head1 INCOMPATIBILITIES WITH OTHER MODULES
 

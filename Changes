@@ -1,5 +1,9 @@
 Revision history for Locale::Wolowitz
 
+1.000001  2014-04-27 21:28:13+03:00 Asia/Jerusalem
+	- $/ was undefined globally when reading JSON files, potentially modifying behavior
+	  of other code in an application. Modification now localized.
+
 1.000000  2014-04-08 19:08:18+03:00 Asia/Jerusalem
 	- Added the ability to load localization data directly from a hash-ref, so data can
 	  come from other sources except files (think databases).

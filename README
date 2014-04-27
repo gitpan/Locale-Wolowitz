@@ -237,8 +237,8 @@ DEPENDENCIES
 
     *   JSON
 
-    "Locale::Wolowitz" recommends JSON and/or JSON::XS for actually being
-    able to parse the JSON files.
+    "Locale::Wolowitz" recommends JSON::XS for faster parsing of JSON files.
+    If installed, "JSON" will automatically load it in its place.
 
 INCOMPATIBILITIES WITH OTHER MODULES
     None reported.
